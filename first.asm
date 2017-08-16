@@ -12,8 +12,8 @@ input1 resd 1
 input2 resd 2
 
 segment .text
-        global _asm_main
-_asm_main:
+        global asm_main
+asm_main:
         enter 0,0
         pusha
 
