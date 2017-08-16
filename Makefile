@@ -9,8 +9,8 @@ driver.o: driver.c
 first.o: first.asm
 	nasm -f elf first.asm
 
-asm_io: asm_io.asm
-	nasm -f elf asm_io.o
+asm_io.o: asm_io.asm
+	nasm -f elf -d ELF_TYPE asm_io.asm
 
 clean:
 	rm *.o 
