@@ -9,7 +9,7 @@ outmsg3 db ", the sum is these is ", 0
 
 segment .bss
 input1 resd 1
-input2 resd 2
+input2 resd 1
 
 segment .text
         global asm_main
